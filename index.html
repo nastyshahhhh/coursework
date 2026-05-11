@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./assets/logo-yangji.svg">
+    <meta name="description" content="Yang Ji — премиальная доставка азиатской кухни в Минске: роллы, WOK, рамен, горячие блюда и десерты.">
+    <title>Yang Ji | Премиальная азиатская кухня</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="container header__inner">
+            <a class="logo" href="index.html" aria-label="Yang Ji, на главную">
+                <img class="logo__mark" src="./assets/logo-yangji.svg" width="48" height="48" alt="">
+                <span class="logo__stack">
+                    <span class="logo__title">Yang Ji</span>
+                    <small class="logo__subtitle">asian kitchen</small>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" aria-label="Основная навигация">
+                <a class="nav__link active" href="index.html">Главная</a>
+                <a class="nav__link" href="menu.html">Меню</a>
+                <a class="nav__link" href="about.html">О нас</a>
+                <a class="nav__link" href="contacts.html">Контакты</a>
+            </nav>
+
+            <button class="cart-button" type="button" data-cart-open aria-label="Открыть корзину">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span data-cart-count>0</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__grid">
+                <div class="hero__content reveal">
+                    <p class="eyebrow">Доставка по Минску за 45 минут</p>
+                    <h1>Азиатская кухня уровня ресторана у вас дома</h1>
+                    <p class="hero__text">Yang Ji объединяет китайские, японские и паназиатские блюда: свежая рыба, авторские соусы, честные порции и аккуратная подача.</p>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" href="menu.html">Выбрать блюда</a>
+                        <a class="btn btn--ghost" href="contacts.html">Оформить доставку</a>
+                    </div>
+                    <div class="hero__stats" aria-label="Преимущества">
+                        <div><strong>4.9</strong><span>рейтинг гостей</span></div>
+                        <div><strong>35+</strong><span>позиций меню</span></div>
+                        <div><strong>25 BYN</strong><span>бесплатная доставка</span></div>
+                    </div>
+                </div>
+
+                <div class="hero-card reveal">
+                    <img src="https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Набор азиатских блюд Yang Ji">
+                    <div class="hero-card__badge">
+                        <span>Chef set</span>
+                        <strong>от 39.90 BYN</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Популярное</p>
+                    <h2>Бестселлеры недели</h2>
+                    
+                </div>
+
+                <div class="product-grid" data-featured-menu></div>
+            </div>
+        </section>
+
+        <section class="section section--accent">
+            <div class="container promo-grid">
+                <div class="promo-card reveal">
+                    <i class="fa-solid fa-fire-burner"></i>
+                    <h3>Готовим после заказа</h3>
+                    <p>Роллы, WOK и горячие блюда не лежат на витрине: кухня начинает готовку после подтверждения заказа.</p>
+                </div>
+                <div class="promo-card reveal">
+                    <i class="fa-solid fa-box-open"></i>
+                    <h3>Упаковка без протечек</h3>
+                    <p>Разделяем соусы, горячее и холодное, чтобы блюда приезжали аккуратно и сохраняли текстуру.</p>
+                </div>
+                <div class="promo-card reveal">
+                    <i class="fa-solid fa-route"></i>
+                    <h3>Умная доставка</h3>
+                    <p>Минимальный заказ 18 BYN, бесплатная доставка от 25 BYN, самовывоз доступен каждый день.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container split">
+                <div class="split__image reveal">
+                    <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=900" alt="WOK лапша с овощами">
+                </div>
+                <div class="split__content reveal">
+                    <p class="eyebrow">Курсовой проект</p>
+                    <h2>Не просто лендинг, а интерактивный сайт доставки</h2>
+                    <p>В проекте есть несколько страниц, отдельные файлы стилей и логики, корзина, фильтрация меню, форма заказа, плавные анимации, адаптивность и сохранение корзины в браузере.</p>
+                    <a class="btn btn--primary" href="about.html">Посмотреть концепцию</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="cart-panel" data-cart-panel aria-hidden="true">
+        <div class="cart-panel__head">
+            <div>
+                <p class="eyebrow">Ваш заказ</p>
+                <h2>Корзина</h2>
+            </div>
+            <button class="icon-button" type="button" data-cart-close aria-label="Закрыть корзину">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="cart-panel__body" data-cart-items></div>
+        <div class="cart-panel__footer">
+            <div class="cart-summary">
+                <span>Итого</span>
+                <strong data-cart-total>0.00 BYN</strong>
+            </div>
+            <a class="btn btn--primary btn--wide" href="contacts.html">Оформить заказ</a>
+        </div>
+    </aside>
+    <div class="overlay" data-overlay></div>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a class="logo" href="index.html">
+                <img class="logo__mark" src="./assets/logo-yangji.svg" width="48" height="48" alt="">
+                <span class="logo__stack">
+                    <span class="logo__title">Yang Ji</span>
+                    <small class="logo__subtitle">asian kitchen</small>
+                </span>
+            </a>
+            <div class="footer__col">
+                <p>© 2026 Yang Ji. Премиальная доставка азиатской кухни в Минске.</p>
+                <p class="footer__meta">Векторный логотип <a href="./assets/logo-yangji.svg">logo-yangji.svg</a> · структура меню <a href="data/menu.xml">menu.xml</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

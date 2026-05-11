@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./assets/logo-yangji.svg">
+    <meta name="description" content="О ресторане Yang Ji: концепция, стандарты кухни, доставка и преимущества проекта.">
+    <title>О нас | Yang Ji</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="container header__inner">
+            <a class="logo" href="index.html">
+                <img class="logo__mark" src="./assets/logo-yangji.svg" width="48" height="48" alt="">
+                <span class="logo__stack">
+                    <span class="logo__title">Yang Ji</span>
+                    <small class="logo__subtitle">asian kitchen</small>
+                </span>
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+            <nav class="nav" aria-label="Основная навигация">
+                <a class="nav__link" href="index.html">Главная</a>
+                <a class="nav__link" href="menu.html">Меню</a>
+                <a class="nav__link active" href="about.html">О нас</a>
+                <a class="nav__link" href="contacts.html">Контакты</a>
+            </nav>
+            <button class="cart-button" type="button" data-cart-open aria-label="Открыть корзину">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span data-cart-count>0</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container page-hero__inner reveal">
+                <p class="eyebrow">О проекте</p>
+                <h1>Yang Ji — сайт доставки, который выглядит как современный ресторанный сервис</h1>
+                <p></p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container split">
+                <div class="split__content reveal">
+                    <p class="eyebrow">Концепция</p>
+                    <h2>Премиальный визуал и понятный пользовательский путь</h2>
+                    <p>Главная страница знакомит с брендом, меню помогает быстро выбрать блюда, корзина сохраняет заказ, а контактная страница имитирует оформление доставки.</p>
+                    <ul class="check-list">
+                        
+                    </ul>
+                </div>
+                <div class="split__image reveal">
+                    <img src="https://images.pexels.com/photos/4253302/pexels-photo-4253302.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Повар готовит азиатское блюдо">
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--accent">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Стандарты</p>
+                    <h2>Почему заказ приезжает вкусным</h2>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <span>01</span>
+                        <h3>Свежие продукты</h3>
+                        <p>Рыба, овощи и зелень закупаются небольшими партиями, чтобы сохранить вкус и текстуру.</p>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <span>02</span>
+                        <h3>Контроль кухни</h3>
+                        <p>Каждый заказ проходит проверку комплектации: приборы, соусы, салфетки и маркировка блюд.</p>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <span>03</span>
+                        <h3>Быстрая логистика</h3>
+                        <p>Маршрут курьера строится так, чтобы горячие блюда не остывали, а роллы сохраняли форму.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="cart-panel" data-cart-panel aria-hidden="true">
+        <div class="cart-panel__head">
+            <div><p class="eyebrow">Ваш заказ</p><h2>Корзина</h2></div>
+            <button class="icon-button" type="button" data-cart-close aria-label="Закрыть корзину"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-panel__body" data-cart-items></div>
+        <div class="cart-panel__footer">
+            <div class="cart-summary"><span>Итого</span><strong data-cart-total>0.00 BYN</strong></div>
+            <a class="btn btn--primary btn--wide" href="contacts.html">Оформить заказ</a>
+        </div>
+    </aside>
+    <div class="overlay" data-overlay></div>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a class="logo" href="index.html">
+                <img class="logo__mark" src="./assets/logo-yangji.svg" width="48" height="48" alt="">
+                <span class="logo__stack">
+                    <span class="logo__title">Yang Ji</span>
+                    <small class="logo__subtitle">asian kitchen</small>
+                </span>
+            </a>
+            <div class="footer__col">
+                <p>© 2026 Yang Ji. Премиальная доставка азиатской кухни в Минске.</p>
+                <p class="footer__meta">Векторный логотип <a href="./assets/logo-yangji.svg">logo-yangji.svg</a> · структура меню <a href="data/menu.xml">menu.xml</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

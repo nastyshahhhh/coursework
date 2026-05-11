@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./assets/logo-yangji.svg">
+    <meta name="description" content="Меню Yang Ji: роллы, суши, WOK, рамен, горячие блюда, десерты и напитки с доставкой по Минску.">
+    <title>Меню | Yang Ji</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="container header__inner">
+            <a class="logo" href="index.html">
+                <img class="logo__mark" src="./assets/logo-yangji.svg" width="48" height="48" alt="">
+                <span class="logo__stack">
+                    <span class="logo__title">Yang Ji</span>
+                    <small class="logo__subtitle">asian kitchen</small>
+                </span>
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+            <nav class="nav" aria-label="Основная навигация">
+                <a class="nav__link" href="index.html">Главная</a>
+                <a class="nav__link active" href="menu.html">Меню</a>
+                <a class="nav__link" href="about.html">О нас</a>
+                <a class="nav__link" href="contacts.html">Контакты</a>
+            </nav>
+            <button class="cart-button" type="button" data-cart-open aria-label="Открыть корзину">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span data-cart-count>0</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container page-hero__inner reveal">
+                <p class="eyebrow">Меню доставки</p>
+                <h1>Выбирайте блюда, фильтруйте категории и добавляйте в корзину</h1>
+                
+                
+            </div>
+        </section>
+
+        <section class="section section--compact">
+            <div class="container">
+                <div class="menu-toolbar reveal">
+                    <label class="search-field" aria-label="Поиск по меню">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" data-menu-search placeholder="Найти блюдо: рамен, ролл, WOK...">
+                    </label>
+                    <div class="filter-group" aria-label="Фильтр меню">
+                        <button class="filter-btn active" type="button" data-menu-filter="all">Все</button>
+                        <button class="filter-btn" type="button" data-menu-filter="rolls">Роллы</button>
+                        <button class="filter-btn" type="button" data-menu-filter="wok">WOK и рамен</button>
+                        <button class="filter-btn" type="button" data-menu-filter="hot">Горячее</button>
+                        <button class="filter-btn" type="button" data-menu-filter="dessert">Десерты</button>
+                    </div>
+                </div>
+
+                <div class="product-grid" data-menu-list></div>
+                <div class="empty-state" data-menu-empty hidden>
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <h3>Ничего не найдено</h3>
+                    <p>Попробуйте изменить запрос или выбрать другую категорию.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="cart-panel" data-cart-panel aria-hidden="true">
+        <div class="cart-panel__head">
+            <div><p class="eyebrow">Ваш заказ</p><h2>Корзина</h2></div>
+            <button class="icon-button" type="button" data-cart-close aria-label="Закрыть корзину"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-panel__body" data-cart-items></div>
+        <div class="cart-panel__footer">
+            <div class="cart-summary"><span>Итого</span><strong data-cart-total>0.00 BYN</strong></div>
+            <a class="btn btn--primary btn--wide" href="contacts.html">Оформить заказ</a>
+        </div>
+    </aside>
+    <div class="overlay" data-overlay></div>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a class="logo" href="index.html">
+                <img class="logo__mark" src="./assets/logo-yangji.svg" width="48" height="48" alt="">
+                <span class="logo__stack">
+                    <span class="logo__title">Yang Ji</span>
+                    <small class="logo__subtitle">asian kitchen</small>
+                </span>
+            </a>
+            <div class="footer__col">
+                <p>© 2026 Yang Ji. Премиальная доставка азиатской кухни в Минске.</p>
+                <p class="footer__meta">Векторный логотип <a href="./assets/logo-yangji.svg">logo-yangji.svg</a> · структура меню <a href="data/menu.xml">menu.xml</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Yang Ji">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f1c98e"/>
+      <stop offset="55%" stop-color="#d9a066"/>
+      <stop offset="100%" stop-color="#b87a42"/>
+    </linearGradient>
+    <linearGradient id="b" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2d38"/>
+      <stop offset="100%" stop-color="#12141c"/>
+    </linearGradient>
+  </defs>
+  <path fill="none" stroke="url(#g)" stroke-width="1.6" stroke-linecap="round" opacity="0.75"
+        d="M22 14c2 4 1 7-1 9M32 10c2 5 1 9-1 11M42 12c2 4 1 7-1 9"/>
+  <ellipse cx="32" cy="40" rx="22" ry="8" fill="url(#g)" opacity="0.35"/>
+  <path fill="url(#b)" stroke="url(#g)" stroke-width="1.4"
+        d="M12 32c0-8 9-14 20-14s20 6 20 14c0 8-9 14-20 14S12 40 12 32z"/>
+  <ellipse cx="32" cy="32" rx="18" ry="6" fill="none" stroke="url(#g)" stroke-width="0.9" opacity="0.5"/>
+  <g stroke="url(#g)" stroke-width="2.2" stroke-linecap="round">
+    <line x1="44" y1="8" x2="26" y2="30"/>
+    <line x1="50" y1="12" x2="30" y2="32"/>
+  </g>
+  <path fill="url(#g)" opacity="0.95"
+        d="M32 22l-4 8h2.2l1.8-3.6L34 30h2.2L32 22zm-1.2 9.2h2.4v2.4h-2.4v-2.4z"/>
+</svg>

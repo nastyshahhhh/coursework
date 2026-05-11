@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns="https://yangji.example/ns/menu" version="1.0" updated="2026-05-11">
+  <restaurant name="Yang Ji asian kitchen" city="Минск" currency="BYN"/>
+
+  <item id="1" category="rolls" tag="Роллы" price="28.90" featured="true"
+        image="https://images.pexels.com/photos/2323398/pexels-photo-2323398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900">
+    <name>Филадельфия Gold</name>
+    <description>Лосось, сливочный сыр, авокадо, огурец и фирменный соус унаги.</description>
+  </item>
+
+  <item id="2" category="rolls" tag="Роллы" price="25.50" featured="true"
+        image="https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900">
+    <name>Калифорния с крабом</name>
+    <description>Снежный краб, тобико, авокадо, огурец и японский майонез.</description>
+  </item>
+
+  <item id="3" category="rolls" tag="Роллы" price="24.90" featured="false"
+        image="https://avatars.mds.yandex.net/i?id=4c77c38c8d6eec01056cddcca763954f_l-5246120-images-thumbs&n=13">
+    <name>Унаги маки</name>
+    <description>Копченый угорь, рис, нори, кунжут и густой соус унаги.</description>
+  </item>
+
+  <item id="4" category="wok" tag="WOK и рамен" price="23.90" featured="true"
+        image="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=900">
+    <name>Тонкоцу рамен</name>
+    <description>Насыщенный бульон, лапша, свинина чашу, яйцо аджитама и зелень.</description>
+  </item>
+
+  <item id="5" category="wok" tag="WOK и рамен" price="21.90" featured="true"
+        image="https://menunedeli.ru/wp-content/uploads/2026/01/Lapsha-udon-s-kuritsei-v-souse-teriyaki-15-933x700.jpg">
+    <name>WOK с курицей терияки</name>
+    <description>Яичная лапша, курица, овощи, кунжут и соус терияки.</description>
+  </item>
+
+  <item id="6" category="wok" tag="WOK и рамен" price="29.90" featured="false"
+        image="https://avatars.mds.yandex.net/i?id=1ba8967e0f5443ce2065e067c89b063f4d84e46a-8455861-images-thumbs&n=13">
+    <name>Том Ям с креветками</name>
+    <description>Креветки, шампиньоны, кокосовое молоко, лайм и паста том ям.</description>
+  </item>
+
+  <item id="7" category="wok" tag="WOK и рамен" price="26.40" featured="false"
+        image="https://avatars.mds.yandex.net/i?id=c91f29f763dbfb054857979724cd52ee_l-5869499-images-thumbs&n=13">
+    <name>Пад-тай</name>
+    <description>Рисовая лапша, креветки, арахис, ростки сои и тамаринд.</description>
+  </item>
+
+  <item id="8" category="hot" tag="Горячее" price="17.90" featured="false"
+        image="https://avatars.mds.yandex.net/i?id=6da170b14819b9ff98a2b3b363caedd16bd3eb2d-3410853-images-thumbs&n=13">
+    <name>Гедза с курицей</name>
+    <description>Шесть японских пельменей с курицей, капустой и соусом понзу.</description>
+  </item>
+
+  <item id="9" category="hot" tag="Горячее" price="22.90" featured="true"
+        image="https://cdn-ru16.foodpicasso.com/assets/7d/3c/d4/01/7d3cd40137c040eb6c6d75c7e8274964---jpeg_1000x_103c0_convert.jpeg">
+    <name>Эби темпура</name>
+    <description>Креветки в хрустящей темпуре с пряным соусом и лаймом.</description>
+  </item>
+
+  <item id="10" category="hot" tag="Горячее" price="18.90" featured="false"
+        image="https://avatars.mds.yandex.net/i?id=94b2b65bc9430f04a132dc381e463971ba1ba097-10468051-images-thumbs&n=13">
+    <name>Карааге</name>
+    <description>Сочная курица в хрустящей панировке, имбирь и чесночный соус.</description>
+  </item>
+
+  <item id="11" category="dessert" tag="Десерты" price="14.90" featured="false"
+        image="https://sun9-12.vkuserphoto.ru/s/v1/ig2/rr0TBtgFaVO9wJiFv1uU1shXzQK0-yfYbR9c_qhI780uV2TLgpnyfIJVRBqltAr5bq3i6WP4to0SKcsJqYtrLHTU.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1080x0">
+    <name>Моти ассорти</name>
+    <description>Три вкуса: матча, клубника и черный кунжут.</description>
+  </item>
+
+  <item id="12" category="dessert" tag="Десерты" price="13.50" featured="false"
+        image="https://avatars.mds.yandex.net/i?id=178403fbb6c55dd8d7c102918ed0b79ce460fdf9-12752893-images-thumbs&n=13">
+    <name>Матча чизкейк</name>
+    <description>Нежный чизкейк с японским чаем матча и сливочным кремом.</description>
+  </item>
+</menu>

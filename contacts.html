@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./assets/logo-yangji.svg">
+    <meta name="description" content="Контакты Yang Ji, адрес, график работы и форма оформления доставки по Минску.">
+    <title>Контакты и заказ | Yang Ji</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="container header__inner">
+            <a class="logo" href="index.html">
+                <img class="logo__mark" src="./assets/logo-yangji.svg" width="48" height="48" alt="">
+                <span class="logo__stack">
+                    <span class="logo__title">Yang Ji</span>
+                    <small class="logo__subtitle">asian kitchen</small>
+                </span>
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+            <nav class="nav" aria-label="Основная навигация">
+                <a class="nav__link" href="index.html">Главная</a>
+                <a class="nav__link" href="menu.html">Меню</a>
+                <a class="nav__link" href="about.html">О нас</a>
+                <a class="nav__link active" href="contacts.html">Контакты</a>
+            </nav>
+            <button class="cart-button" type="button" data-cart-open aria-label="Открыть корзину">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span data-cart-count>0</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container page-hero__inner reveal">
+                <p class="eyebrow">Контакты</p>
+                <h1>Оформите доставку или свяжитесь с рестораном</h1>
+               
+            </div>
+        </section>
+
+        <section class="section section--compact">
+            <div class="container contact-grid">
+                <div class="contact-card reveal">
+                    <h2>Yang Ji в Минске</h2>
+                    <div class="contact-line"><i class="fa-solid fa-location-dot"></i><span>г. Минск, ул. Алоизы Пашкевич, 5</span></div>
+                    <div class="contact-line"><i class="fa-solid fa-phone"></i><a href="tel:+375333841852">+375 (33) 384-18-52</a></div>
+                    <div class="contact-line"><i class="fa-solid fa-clock"></i><span>Пн-Вс: 11:00 - 23:00</span></div>
+                    <div class="contact-line"><i class="fa-solid fa-truck-fast"></i><span>Доставка от 18 BYN, бесплатно от 25 BYN</span></div>
+                    <div class="socials">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#" aria-label="VK"><i class="fa-brands fa-vk"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <form class="order-form reveal" data-order-form>
+                    <h2>Форма заказа</h2>
+                    <p class="form-note">Заполните данные, а блюда добавьте через страницу меню.</p>
+
+                    <label>
+                        Имя
+                        <input type="text" name="name" placeholder="Например, Анна" required minlength="2">
+                    </label>
+                    <label>
+                        Телефон
+                        <input type="tel" name="phone" placeholder="+375 (__) ___-__-__" required>
+                    </label>
+                    <label>
+                        Адрес доставки
+                        <input type="text" name="address" placeholder="Улица, дом, квартира" required>
+                    </label>
+                    <label>
+                        Комментарий
+                        <textarea name="comment" rows="4" placeholder="Домофон, сдача, пожелания к заказу"></textarea>
+                    </label>
+
+                    <div class="order-preview" data-order-preview>
+                        <span>Корзина пока пустая</span>
+                    </div>
+
+                    <button class="btn btn--primary btn--wide" type="submit">Подтвердить заказ</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <aside class="cart-panel" data-cart-panel aria-hidden="true">
+        <div class="cart-panel__head">
+            <div><p class="eyebrow">Ваш заказ</p><h2>Корзина</h2></div>
+            <button class="icon-button" type="button" data-cart-close aria-label="Закрыть корзину"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-panel__body" data-cart-items></div>
+        <div class="cart-panel__footer">
+            <div class="cart-summary"><span>Итого</span><strong data-cart-total>0.00 BYN</strong></div>
+            <a class="btn btn--primary btn--wide" href="contacts.html">Оформить заказ</a>
+        </div>
+    </aside>
+    <div class="overlay" data-overlay></div>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a class="logo" href="index.html">
+                <img class="logo__mark" src="./assets/logo-yangji.svg" width="48" height="48" alt="">
+                <span class="logo__stack">
+                    <span class="logo__title">Yang Ji</span>
+                    <small class="logo__subtitle">asian kitchen</small>
+                </span>
+            </a>
+            <div class="footer__col">
+                <p>© 2026 Yang Ji. Премиальная доставка азиатской кухни в Минске.</p>
+                <p class="footer__meta">Векторный логотип <a href="./assets/logo-yangji.svg">logo-yangji.svg</a> · структура меню <a href="data/menu.xml">menu.xml</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
